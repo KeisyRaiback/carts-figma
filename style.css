@@ -1,0 +1,98 @@
+p{
+    margin: 3px;
+    padding: 0 10px;
+
+}
+body{
+    background-color:rgb(175, 116, 6);
+    font-family:Arial, Helvetica, sans-serif;
+    color:black;    
+}
+main{
+    max-width: 1000px;
+    margin: 20px auto;
+     
+    /*display: grid; 
+    grid-gap: 20px; 
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(3, auto); 
+    grid-template-areas:
+    "nav nav nav nav"
+    "contenido contenido contenido"
+    "bloque1 bloque2" /*Marcos Texto Fotos*/
+    /*"footer footer footer" */
+}
+nav{
+    background-color:blanchedalmond;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    /*grid-area: nav; */
+    display: flex;
+    padding: 30px;
+    border-radius: 20 px;
+    justify-content: space-between; /* Los elementos se distribuyen de manera que haya espacio igual entre ellos. El primer y último elemento estarán alineados con los bordes del contenedor.*/
+    align-items: center;
+}
+nav ul{ /* nav ul, es para aplicarle estilos SOLO a la lista (Zoom, anfitriones y Discord)*/
+    display: flex;
+    /* flex-direction: column; */ 
+    list-style: none; /* Para quitar el punto de la lista de zoom, anfitriones y discord*/
+    gap: 30px;
+ }
+.contenido{
+    /*grid-area: contenido;*/
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.cart{
+    background-color: lightsalmon;
+    color:rgb(172, 101, 8);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    align-items: center;
+    flex-direction: column; /* organiza los elementos de un contenedor de manera VERTICAL, uno debajo del otro.*/
+}
+img{
+    max-width: 100%;
+    margin: 20Px;
+}
+
+/*
+#bloque1{
+    grid-area: bloque1;
+    background-color: rgb(175, 209, 248);    
+}
+#bloque2{
+    grid-area: bloque2;
+    background-color: burlywood;
+} */
+footer{
+    background-color: rgb(175, 209, 248);
+    grid-area: footer;
+    padding: 20Px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+/*
+@media screen and (max-width: 750px){ 
+    .contenedor{
+        grid-template-areas:
+        "nav nav nav nav"
+        "contenido contenido contenido"
+        "bloque1 bloque2"
+        "footer footer footer"
+    }
+}
+    */
+    @media (max-width: 750px){
+        main{
+            flex-direction: column;
+        }
+    }
+
