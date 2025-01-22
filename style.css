@@ -1,10 +1,11 @@
 p{
     margin: 3px;
-    padding: 0 10px;
-
+    /* padding: 0 10px; */
+    text-align: left;
+    color: #666;
 }
 body{
-    background-color:rgb(175, 116, 6);
+    background-color: #e0e0e0;
     font-family:Arial, Helvetica, sans-serif;
     color:black;    
 }
@@ -23,7 +24,7 @@ main{
     /*"footer footer footer" */
 }
 nav{
-    background-color:blanchedalmond;
+    background-color:#7e7c7c;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     /*grid-area: nav; */
     display: flex;
@@ -52,13 +53,24 @@ nav ul{ /* nav ul, es para aplicarle estilos SOLO a la lista (Zoom, anfitriones 
     text-align: center;
     display: flex;
     justify-content: center;
-    border-radius: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgb(81, 80, 82);
     align-items: center;
-    flex-direction: column; /* organiza los elementos de un contenedor de manera VERTICAL, uno debajo del otro.*/
+    flex-direction: column;
+    min-width: 230px;
+    padding: 1.5rem; /* organiza los elementos de un contenedor de manera VERTICAL, uno debajo del otro.*/
 }
 img{
+    width: 150px;
+    height: 125px;
+}
+img:hover{
     max-width: 100%;
-    margin: 20Px;
+    transform: scale(1.1);
+}
+
+h3{
+    color: brown;
 }
 
 /*
@@ -71,7 +83,7 @@ img{
     background-color: burlywood;
 } */
 footer{
-    background-color: rgb(175, 209, 248);
+    background-color: gray;
     grid-area: footer;
     padding: 20Px;
     border-radius: 20px;
@@ -79,6 +91,29 @@ footer{
     align-items: center;
     justify-content: center;    
 }
+
+.footer-p{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;   
+}
+
+li{
+    color: blanchedalmond;
+}
+
+li:hover {
+    /que al pasar el ratón por encima resalte/
+    transform: scale(1.1);
+    font-size: 22px;
+    color: rgb(246, 142, 14);
+  }
+a{
+    text-decoration: none; /*quitar rayita al enlace de Zoom, Anfitriones y Discord */
+}
+.copy{
+    color: white;
+}
+
 /*
 @media screen and (max-width: 750px){ 
     .contenedor{
